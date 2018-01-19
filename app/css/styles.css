@@ -1,1 +1,35 @@
 /* Enjoy !*/
+
+.containers{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.containers-profile{
+	width: 100%;
+	height: 50%;
+	background-color: pink;
+}
+
+.containers-user{
+	width: 100%;
+	height: 50%;
+	background-color: salmon;
+}
+
+@media screen and (min-width: 720px){
+	.containers{
+		flex-wrap: nowrap;
+	}
+
+	.containers-profile{
+		background-color: red;
+	}
+	.containers-user{
+		background-color: green;
+	}
+}
+
